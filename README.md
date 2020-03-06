@@ -30,12 +30,16 @@ Clica em console
 Clica em Quick Start
 Depois Access Kuberconfig
 rode os comandos a partir de 
-```mkdir -p $HOME/.kube
+
+```mkdir -p $HOME/.kube```
+
+experimente os comandos: 
+
 ```
+kubectl version
 
-experimente o comando: **kubectl version**
-
-**kubectl create -f https://k8s.io/examples/application/deployment.yaml**
+kubectl create -f https://k8s.io/examples/application/deployment.yaml
+```
 
 segue as linhas 
 
