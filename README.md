@@ -2,8 +2,42 @@
 
 Workshop Kubernetes 101
 
+## AMBIENTE
 
+Criar uma conta na Oracle Cloud ou uma outra ou ainda instalar o Kubernets, Minikube e Heml localmente.
 
+Criar conta free/teste na Oracle Cloud (Teste 30 dias com 1100 reais de crédito e free para sempre de alguns serviços)
+https://www.oracle.com/br/cloud/free/
+
+Após se logar siga:
+Menu > Developer Services > Clica em More..... 
+Copia o texto abaixo: 
+allow service OKE to manage all-resources in tenancy
+
+Menu > Identity > Policies > ... colocar o código acima em Policy Statements/Statement 1
+
+Menu > Developer Services > Container Clusters (OKE)
+Clicar em Create Cluster
+
+Quick Create > Launch Workflow
+
+Choose Visibiliy type > Public
+Ative os Add Ons: Kubernetes Dashboard Enabled + Tiller (Helm) Enabled
+
+* OKE equivale o EKS da AWS
+
+Clica em console
+Clica em Quick Start
+Depois Access Kuberconfig
+rode os comandos a partir de 
+```mkdir -p $HOME/.kube
+```
+
+experimente o comando: **kubectl version**
+
+**kubectl create -f https://k8s.io/examples/application/deployment.yaml**
+
+segue as linhas 
 
 ## Trabalhando com Namespaces
 
